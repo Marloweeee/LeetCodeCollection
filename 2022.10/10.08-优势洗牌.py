@@ -10,13 +10,13 @@ class Solution:
         left,right=0,len(nums2)-1
 
         for i,num in enumerate(nums1):
-            print("第{}次比较过程：".format(i))
+            # print("第{}次比较过程：".format(i))
             if num>nums2[idx[left]]:
-                print("当前使用nums1中的{}与nums2中索引为{}的{}比较".format(num,idx[left],nums2[idx[left]]))
+                # print("当前使用nums1中的{}与nums2中索引为{}的{}比较".format(num,idx[left],nums2[idx[left]]))
                 ans[idx[left]]=num
                 left+=1
             else:
-                print("当前使用nums1中的{}与nums2中索引为{}的{}比较".format(num, idx[right], nums2[idx[right]]))
+                # print("当前使用nums1中的{}与nums2中索引为{}的{}比较".format(num, idx[right], nums2[idx[right]]))
                 ans[idx[right]]=num
                 right-=1
         return ans
