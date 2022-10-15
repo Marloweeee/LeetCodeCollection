@@ -7,8 +7,8 @@ class Solution:
             if num in target:
                 res.append('Push')
             else:
-                res.append('Push')
-                res.append('Pop')
+                res+=['Push','Pop']
+
             if num==target[-1]:
                 break
         return res
